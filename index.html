@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Feeds RSS de Fotografía, Cámaras e IA</title>
+
+  <meta name="description" content="Listado gratuito de feeds RSS sobre fotografía, cámaras fotográficas e inteligencia artificial aplicada a imagen y cámaras." />
+
+  <!-- RSS autodiscovery -->
+  <link rel="alternate" type="application/rss+xml" title="RSS Fotografía, Cámaras e IA" href="feed.xml" />
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --card-soft: #1f2937;
+      --text: #f9fafb;
+      --muted: #cbd5e1;
+      --accent: #38bdf8;
+      --accent-2: #22c55e;
+      --border: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #020617, #0f172a);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 60px 20px 40px;
+      text-align: center;
+      background:
+        radial-gradient(circle at top left, rgba(56, 189, 248, 0.2), transparent 30%),
+        radial-gradient(circle at top right, rgba(34, 197, 94, 0.15), transparent 30%);
+    }
+
+    header h1 {
+      font-size: clamp(2rem, 5vw, 4rem);
+      margin: 0 0 16px;
+    }
+
+    header p {
+      max-width: 800px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    main {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+      padding: 40px 0 80px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      margin: 30px 0 10px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 999px;
+      text-decoration: none;
+      color: #020617;
+      background: var(--accent);
+      font-weight: bold;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .button.secondary {
+      background: var(--accent-2);
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    .section-title {
+      margin-top: 50px;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    .info-card {
+      background: rgba(17, 24, 39, 0.85);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+      margin-bottom: 30px;
+    }
+
+    .info-card code {
+      background: #020617;
+      color: var(--accent);
+      padding: 3px 6px;
+      border-radius: 6px;
+    }
+
+    .feed-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .feed-item {
+      background: rgba(31, 41, 55, 0.9);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 20px;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .feed-item:hover {
+      transform: translateY(-3px);
+      border-color: var(--accent);
+    }
+
+    .feed-item h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.15rem;
+    }
+
+    .feed-item p {
+      color: var(--muted);
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+    }
+
+    .feed-item a {
+      color: var(--accent);
+      word-break: break-word;
+    }
+
+    .status {
+      color: var(--muted);
+      padding: 20px;
+      border: 1px dashed var(--border);
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 30px 20px;
+      border-top: 1px solid var(--border);
+      background: #020617;
+    }
+
+    footer a {
+      color: var(--accent);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Feeds RSS de Fotografía, Cámaras e IA</h1>
+    <p>
+      Página pública para consultar y compartir un feed RSS gratuito sobre fotografía,
+      cámaras fotográficas, objetivos, reviews, rumores e inteligencia artificial aplicada a imagen.
+    </p>
+
+    <div class="actions">
+      <a class="button" href="feed.xml" target="_blank" rel="noopener">
+        Ver feed RSS
+      </a>
+
+      <a class="button secondary" href="https://validator.w3.org/feed/check.cgi?url=feed.xml" target="_blank" rel="noopener">
+        Validar RSS
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="info-card">
+      <h2>Cómo usar este RSS</h2>
+      <p>
+        Si esta página está publicada con GitHub Pages, tu feed RSS estará disponible normalmente en:
+      </p>
+
+      <p>
+        <code>https://TU_USUARIO.github.io/TU_REPOSITORIO/feed.xml</code>
+      </p>
+
+      <p>
+        En Make.com puedes usar esa URL en el módulo:
+        <strong>RSS &gt; Watch RSS feed items</strong>.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="section-title">Contenido del feed RSS</h2>
+
+      <div id="rss-status" class="status">
+        Cargando entradas desde feed.xml...
+      </div>
+
+      <div id="feed-list" class="feed-list"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      Feed RSS gratuito sobre fotografía, cámaras e inteligencia artificial visual.
+    </p>
+    <p>
+      <a href="feed.xml">Abrir feed.xml</a>
+    </p>
+  </footer>
+
+  <script>
+    async function cargarRSS() {
+      const status = document.getElementById("rss-status");
+      const container = document.getElementById("feed-list");
+
+      try {
+        const response = await fetch("feed.xml", { cache: "no-store" });
+
+        if (!response.ok) {
+          throw new Error("No se pudo cargar feed.xml");
+        }
+
+        const xmlText = await response.text();
+        const parser = new DOMParser();
+        const xml = parser.parseFromString(xmlText, "application/xml");
+
+        const parseError = xml.querySelector("parsererror");
+        if (parseError) {
+          throw new Error("El archivo feed.xml no es XML válido");
+        }
+
+        const items = Array.from(xml.querySelectorAll("item"));
+
+        if (items.length === 0) {
+          status.textContent = "No se encontraron entradas en el RSS.";
+          return;
+        }
+
+        status.style.display = "none";
+
+        items.forEach((item) => {
+          const title = item.querySelector("title")?.textContent || "Sin título";
+          const link = item.querySelector("link")?.textContent || "#";
+          const description = item.querySelector("description")?.textContent || "Sin descripción";
+          const pubDate = item.querySelector("pubDate")?.textContent || "";
+
+          const article = document.createElement("article");
+          article.className = "feed-item";
+
+          article.innerHTML = `
+            <h3>${escapeHTML(title)}</h3>
+            <p>${escapeHTML(description)}</p>
+            ${pubDate ? `<p><small>${escapeHTML(pubDate)}</small></p>` : ""}
+            <a href="${escapeAttribute(link)}" target="_blank" rel="noopener">
+              Abrir feed
+            </a>
+          `;
+
+          container.appendChild(article);
+        });
+
+      } catch (error) {
+        status.innerHTML = `
+          No se pudo cargar automáticamente el RSS.
+          Comprueba que el archivo <strong>feed.xml</strong> esté en la misma carpeta que este index.html.
+          <br><br>
+          Error: ${escapeHTML(error.message)}
+        `;
+      }
+    }
+
+    function escapeHTML(text) {
+      return text
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function escapeAttribute(text) {
+      return escapeHTML(text);
+    }
+
+    cargarRSS();
+  </script>
+
+</body>
+</html>
