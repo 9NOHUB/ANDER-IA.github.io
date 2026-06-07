@@ -1,101 +1,44 @@
-[
-  {
-    "name": "PetaPixel",
-    "rss": "https://petapixel.com/feed/"
-  },
-  {
-    "name": "DPReview",
-    "rss": "https://www.dpreview.com/feeds/news.xml"
-  },
-  {
-    "name": "Fstoppers",
-    "rss": "https://fstoppers.com/feed"
-  },
-  {
-    "name": "Photography Life",
-    "rss": "https://photographylife.com/feed"
-  },
-  {
-    "name": "DIY Photography",
-    "rss": "https://www.diyphotography.net/feed/"
-  },
-  {
-    "name": "Shutterbug",
-    "rss": "https://www.shutterbug.com/rss.xml"
-  },
-  {
-    "name": "ePHOTOzine",
-    "rss": "https://www.ephotozine.com/full.xml"
-  },
-  {
-    "name": "Camera Jabber",
-    "rss": "https://camerajabber.com/feed/"
-  },
-  {
-    "name": "Photography Blog",
-    "rss": "https://www.photographyblog.com/feeds/articles"
-  },
-  {
-    "name": "Photography Bay",
-    "rss": "https://feeds.feedburner.com/PhotographyBay"
-  },
-  {
-    "name": "Photofocus",
-    "rss": "https://photofocus.com/feed/"
-  },
-  {
-    "name": "Digital Camera World",
-    "rss": "https://www.digitalcameraworld.com/feeds/all"
-  },
-  {
-    "name": "British Journal of Photography",
-    "rss": "https://www.1854.photography/feed/"
-  },
-
-  {
-    "name": "Canon Rumors",
-    "rss": "https://www.canonrumors.com/feed/"
-  },
-  {
-    "name": "Nikon Rumors",
-    "rss": "https://nikonrumors.com/feed/"
-  },
-  {
-    "name": "Sony Alpha Rumors",
-    "rss": "https://www.sonyalpharumors.com/feed/"
-  },
-  {
-    "name": "Fuji Rumors",
-    "rss": "https://www.fujirumors.com/feed/"
-  },
-  {
-    "name": "43 Rumors",
-    "rss": "https://www.43rumors.com/feed/"
-  },
-  {
-    "name": "Leica Rumors",
-    "rss": "https://leicarumors.com/feed/"
-  },
-  {
-    "name": "Photo Rumors",
-    "rss": "https://photorumors.com/feed/"
-  },
-
-  {
-    "name": "News Shooter",
-    "rss": "https://www.newsshooter.com/feed/"
-  },
-  {
-    "name": "CineD",
-    "rss": "https://www.cined.com/feed/"
-  },
-
-  {
-    "name": "Lens Rentals Blog",
-    "rss": "https://www.lensrentals.com/blog/feed/"
-  },
-  {
-    "name": "Phillip Reeve",
-    "rss": "https://phillipreeve.net/blog/feed/"
-  }
-]
+{
+  "name": "PetaPixel",
+  "rss": "https://petapixel.com/feed/"
+},
+{
+  "name": "Fstoppers",
+  "rss": "https://fstoppers.com/feed"
+},
+{
+  "name": "Photography Life",
+  "rss": "https://photographylife.com/feed"
+},
+{
+  "name": "DIY Photography",
+  "rss": "https://www.diyphotography.net/feed/"
+},
+{
+  "name": "Digital Camera World",
+  "rss": "https://www.digitalcameraworld.com/feeds/all"
+},
+{
+  "name": "Canon Rumors",
+  "rss": "https://www.canonrumors.com/feed/"
+},
+{
+  "name": "Nikon Rumors",
+  "rss": "https://nikonrumors.com/feed/"
+},
+{
+  "name": "Sony Alpha Rumors",
+  "rss": "https://www.sonyalpharumors.com/feed/"
+},
+{
+  "name": "Fuji Rumors",
+  "rss": "https://www.fujirumors.com/feed/"
+},
+{
+  "name": "Leica Rumors",
+  "rss": "https://leicarumors.com/feed/"
+},
+{
+  "name": "Photo Rumors",
+  "rss": "https://photorumors.com/feed/"
+}
